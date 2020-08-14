@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+	<head>
+		<title>Ford Repair Forum</title>
+		<link rel="stylesheet" href="css/FordRepairForum.css" />
+	</head>
+	<body>
+		<header>
+			<div><img src="websiteLocationOfImageEvenLocal" alt="my head"/>Ford Repair Forum</div>
+			<nav>
+				<ul>
+					<li><a href="http://index.html">Home</a></li>
+					<li><a href="http://contacts.html">Contacts</a></li>
+					<li><a href="http://about.html">About</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			This is a site for people to teach each other repairs on Ford products.
+			
+			I want a search box. I'll need a text field and a button to execute.
+			<br/> Let's have a form for checking isAMember. And another form for filtering the search(which would be on the isAMember=true page in a real example).
+			<form action="http://theWebsiteReceivingData" method="POST">
+				<label for="MemberName">Enter your member name: </label>
+				<input name="MemberName" />
+				<input type="submit" value="Submit" />
+			</form>
+			<br/>
+			
+			<form>
+				<!-- <input type="checkbox" name="filter" /> -->
+				<label for="forumselect">Filter your search: </label>
+				<select name="forumSelect">
+					<option selected><a href="rangerForumSite">Ranger</a></option>
+					<option><a href="4runnerForumSite">4Runner</a></option>
+					<option><a href="f150ForumSite">f150</a></option>
+					<option><a href="f350ForumSite">f350</a></option>
+					<option><a href="taurusForumSite">Taurus</a></option>
+					<option><a href="JaguarForumSite">Jaguar</a></option>
+			</form>
+			<br/>
+			
+			<form action="http://theWebsiteReceivingData" method="POST">
+				<label for="SearchField">Search</label>
+				<input name="SearchField" />
+				<input type="submit" value="Search"/>
+			</form>
+		</section>
+		<footer>
+			&copy; fake company LLC &#234; &#x987; &gt;
+		</footer>
+	</body>

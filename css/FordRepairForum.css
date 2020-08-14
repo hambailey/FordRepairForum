@@ -1,0 +1,10 @@
+/*  FordRepairForum.css */
+
+nav {
+	layout: inline;
+}
+
+header, footer {
+	background-color: lightgrey;
+}
+

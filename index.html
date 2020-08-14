@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Github Hubber</title>
+		<!-- Comments   
+		  -->
+		<!-- [if lt IE 9]>
+			<foo /> or handle html5 tags for older browsers (really only effects IE browsers before 9)
+			<script src="//html5shiv.googlcode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="css/site.css" />
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<nav>
+					<ul>
+						<li><a href="/index.html">Home</a></li>
+						<li><a href="/contact.html">Contact</a></li>
+						<li><a href="/about.html">About</a></li>
+					</ul>
+				</nav>
+				<div><img src="img/logo.gif" class="bordered-image" /></div>
+				<div>Github Hub</div>  
+				<div>This is a site to search Github for interesting projects.
+				</div>
+
+			</header>
+			<section id="main">
+				<p>In this <en>sample site</en>, we'll show a list of <a href="http://github.com">Github</a> projects <span>and the data</span> about <strong>those projects</strong>.
+				</p>
+				<form action="http://websiteImSendingInformationTo" method="POST" class="bordered-image simple-form">
+					<label for="searchPhrase">Search Phrase:</label>
+					<input type="text" name="searchPhrase" id="searchPhrase"/>
+					<br/>
+					
+					<label for="usesStars">Checkbox</label>
+					<input type="checkbox" name="usesStars" checked="true" id="usesStars"/>
+					<label for="usesStars">Uses Stars?</label>
+					<br/>
+					
+					<label for="LanguageSelect">Language Select</label>
+					<select name="LanguageSelect" id="LanguageSelect">
+						<option>All</option>
+						<option>CSS</option>
+						<option selected>Java</option>
+						<option>Javascript</option>
+						<option>Ruby</option>
+					</select>
+					<br/>
+					
+					<label for="Searching">Search</label>
+					<input type="submit" value="Search" name="searched" id="Searching"/>
+					<label for="searched">hewwoe</label>
+					
+					<!--in HTML, the value 'name' is used to know what value is being sent in a form.
+					The value 'id' is used to refer to particular elements on a document.-->
+					
+				</form>
+				<div id="results" class="bordered-image">
+				<button id="toggleButton">Hide</button>
+					<div id="resultList">This is where results will live... eventually.
+					</div>
+				</div>
+			</section>
+			<footer>
+			&copy; 2020 madeup copyright LLC &#123; &#x160;
+			</footer>
+		</div>
+		<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>
