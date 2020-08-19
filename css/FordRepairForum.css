@@ -1,10 +1,61 @@
 /*  FordRepairForum.css */
+html, body{
+	background-color: lightgrey;
+	padding: 0;
+	margin: 0;
+}
+
+.containsWholePage {
+	width: auto;
+	margin: 0 auto;
+	background-color: white;
+	padding: 5px;
+}
 
 nav {
 	layout: inline;
 }
 
 header, footer {
+	background-color: white;
+	border: solid 1px lightgrey;
+	padding: 3px;
+}
+
+header {
+	
+}
+
+.borderedSection{
+	border-radius: 5px;
+	border: solid 1px lightgrey;
+	padding: 1px;
+}
+
+.loginForm {
+	display: inline-block;
+	padding: 3px;
 	background-color: lightgrey;
 }
 
+.loginForm label{
+	font-weight: bold;
+}
+
+.formButton {
+	background-color: lightgreen;
+	border-radius: 15px;
+	padding: 3px;
+	margin: 5px;
+}
+
+#headerForm {
+	display: inline-block;
+	width: 300px;
+}
+
+#headerTitle {
+	display: inline-block;
+	vertical-align: center;
+	horizontal-align: left;
+}
