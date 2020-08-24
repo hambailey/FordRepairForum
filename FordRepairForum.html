@@ -4,48 +4,72 @@
 		<link rel="stylesheet" href="css/FordRepairForum.css" />
 	</head>
 	<body>
-		<header>
-			<div><img src="websiteLocationOfImageEvenLocal" alt="my head"/>Ford Repair Forum</div>
-			<nav>
-				<ul>
-					<li><a href="http://index.html">Home</a></li>
-					<li><a href="http://contacts.html">Contacts</a></li>
-					<li><a href="http://about.html">About</a></li>
-				</ul>
-			</nav>
-		</header>
-		<section>
-			This is a site for people to teach each other repairs on Ford products.
-			
-			I want a search box. I'll need a text field and a button to execute.
-			<br/> Let's have a form for checking isAMember. And another form for filtering the search(which would be on the isAMember=true page in a real example).
-			<form action="http://theWebsiteReceivingData" method="POST">
-				<label for="MemberName">Enter your member name: </label>
-				<input name="MemberName" />
-				<input type="submit" value="Submit" />
-			</form>
-			<br/>
-			
-			<form>
-				<!-- <input type="checkbox" name="filter" /> -->
-				<label for="forumselect">Filter your search: </label>
-				<select name="forumSelect">
-					<option selected><a href="rangerForumSite">Ranger</a></option>
-					<option><a href="4runnerForumSite">4Runner</a></option>
-					<option><a href="f150ForumSite">f150</a></option>
-					<option><a href="f350ForumSite">f350</a></option>
-					<option><a href="taurusForumSite">Taurus</a></option>
-					<option><a href="JaguarForumSite">Jaguar</a></option>
-			</form>
-			<br/>
-			
-			<form action="http://theWebsiteReceivingData" method="POST">
-				<label for="SearchField">Search</label>
-				<input name="SearchField" />
-				<input type="submit" value="Search"/>
-			</form>
-		</section>
-		<footer>
-			&copy; fake company LLC &#234; &#x987; &gt;
-		</footer>
+		<div class="containsWholePage">
+			<div><img src="websiteLocationOfImageEvenLocal" alt="my head" class="borderedSection"/>Ford Repair Forum</div>
+				(Dropdown Title with login link)
+				<br/>
+				<br/>
+				(ad space)
+				<br/>
+				<br/>
+				<br/>
+				<section>
+					<br/>
+					<br/>
+					-1st setup a header with title on left - background white, and a lightgrey form on the right.
+					<br/>
+					<br/>
+					<!-- Header left has website title aligned left centered verticle and this box resizes horizontally. Let's have a form for checking isAMember in header right, does not resize horizontally. And another form for filtering the search(which would be on the isAMember=true page in a real example). -->
+				</section>
+			<header>
+				<div class="borderedSection">
+					<div id="headerDiv" style="">
+						<div id="headerTitle" style="">
+							FordRepairForum - The Only Place for Repair Advice
+						</div>
+						<div id="headerForm" class="loginForm" style="">
+							<form action="http://theWebsiteReceivingData" method="POST" style="">
+								<label for="MemberName">Name </label>
+								<input type="text"  name="MemberName" />
+								<br/>
+								<label for="MemberPassword">Password</label>
+								<input name="MemberPassword"/>
+								<br/>
+								<input type="submit" value="Submit" class="formButton"/>
+							</form>
+						</div>
+					</div>
+					<nav>
+						<ul>
+							<li><a href="http://index.html">Home</a></li>
+							<li><a href="http://contacts.html">Contacts</a></li>
+							<li><a href="http://about.html">About</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+				<br/>
+			<section>
+				<form>
+					<label for="forumSelect">Filter your search: </label>
+					<select name="forumSelect">
+						<option selected><a href="rangerForumSite">Ranger</a></option>
+						<option><a href="4runnerForumSite">4Runner</a></option>
+						<option><a href="f150ForumSite">f150</a></option>
+						<option><a href="f350ForumSite">f350</a></option>
+						<option><a href="taurusForumSite">Taurus</a></option>
+						<option><a href="JaguarForumSite">Jaguar</a></option>
+				</form>
+				<br/>
+				
+				<form action="http://theWebsiteReceivingData" method="POST">
+					<label for="SearchField">Search</label>
+					<input name="SearchField" />
+					<input type="submit" value="Search"/>
+				</form>
+			</section>
+			<footer>
+				&copy; fake company LLC &#234; &#x987; &gt;
+			</footer>
+		</div>
 	</body>
