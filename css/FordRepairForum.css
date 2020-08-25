@@ -1,6 +1,15 @@
 /*  FordRepairForum.css */
+
+:root {
+	--background-color: grey;
+	--header-border-color: black;
+	--title-border-color: red;
+	--form-border-color: blue;
+	--form-element-size: 100px;
+}
+
 html, body{
-	background-color: whitesmoke;
+	background-color: var(--background-color);
 	padding: 0;
 	margin: 0;
 }
@@ -62,9 +71,9 @@ header {
 	
 }
 
-.borderedSection{
-	/* border-radius: 1px; */
-	/* border: solid 1px yellow; */
+.borderedDiv{
+	/* border-radius: 3px; */
+	/* border: solid 1px pink; */
 	/* padding: 1px; */
 }
 
@@ -76,7 +85,7 @@ header {
 .loginForm label{
 	display: inline-block;
 	font-size: 15px;
-	width: 100px;
+	width: var(--form-element-size);
 }
 
 .loginForm input[type=text]{
@@ -84,8 +93,7 @@ header {
 	display: inline-block;
 	font-size: 15px;
 	border: 1px solid lightgrey;
-	width: 100px;
-	/* button background fades to grey when hover, fades back to smokewhite when remove. */
+	width: var(--form-element-size);
 }
 
 .formButton {
@@ -96,17 +104,22 @@ header {
 	padding: 5px;
 	height: 24px;
 	margin: 5px;
+	transition: backrgound-color, .5s;
+}
+
+.formButton:hover {
+	background-color: lightgrey;
 }
 
 #headerDiv {
-	/* border: 1px solid black; */
+	/* border: 1px solid var(--header-border-color); */
 	padding: 1px;
 	clear: both;
 	overflow: auto;
 }
 
 #headerForm {
-	/* border: 1px solid blue; */
+	/* border: 1px solid var(--form-border-color); */
 	float: right;
 	width: 300px;
 }
@@ -121,7 +134,7 @@ header {
 	display: inline-block;	
 	height: 119px;
 	
-	/* border: 1px solid red; */
+	/* border: 1px solid var(--title-border-color); */
 	vertical-align: center;
 	align: left;
 	font-weight: bold;
